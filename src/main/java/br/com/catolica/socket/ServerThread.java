@@ -14,8 +14,6 @@ public class ServerThread {
             SocketThreadID thread = new SocketThreadID(socket);
             System.out.println("Criada uma nova Thread, ID: " + thread.getId());
             thread.start();
-            socket.close();
-            serverSocket.close();
         }
     }
 }
